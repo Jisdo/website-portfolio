@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajis Alfikar — Web Designer &amp; Frontend Developer</title>
+    <meta name="description"
+        content="Rajis Alfikar is a web designer and frontend developer crafting clean, fast and memorable digital experiences for startups, agencies and independent brands.">
+    <meta name="author" content="Rajis Alfikar">
+    <meta name="theme-color" content="#f7f6ff">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rajis Alfikar — Web Designer &amp; Frontend Developer">
+    <meta property="og:description"
+        content="Clean, fast and thoughtful websites — from the first wireframe to the final line of code.">
+    <meta property="og:image" content="./assets/port2.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+    <!-- Prevent theme flash -->
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("theme");
+                if (stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            } catch (e) { }
+        })();
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+    <header id="header">
+        <nav class="container" aria-label="Primary navigation">
+            <a href="#home" class="logo" aria-label="Rajis Alfikar — home">Portf<span>olio.</span></a>
+
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button type="button" class="toggle-btn" id="theme-toggle" aria-label="Switch to dark theme">
+                    <i class="uil uil-moon" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-list">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+    <main id="main" tabindex="-1">
+        <!-- ================= HERO ================= -->
+        <section class="showcase-area" id="home">
+            <img src="./assets/square1.png" class="shape square" alt="" aria-hidden="true">
+
+            <div class="container">
+                <div class="showcase-info">
+                    <p class="availability">
+                        <span class="pulse" aria-hidden="true"></span>
+                        Available for freelance projects
+                    </p>
+
+                    <p class="sub-heading">
+                        <span class="sr-only">Web designer, frontend developer and UI/UX designer</span>
+                        <span class="typed-text" aria-hidden="true">Web Designer</span><span class="typed-cursor"
+                            aria-hidden="true"></span>
+                    </p>
+
+                    <h1 class="heading">Rajis <span class="accent">Alfikar</span></h1>
+
+                    <p class="text">
+                        I design and build clean, fast websites for startups and brands — turning rough ideas into
+                        digital experiences that feel effortless to use.
+                    </p>
+
+                    <div class="cta">
+                        <a href="#contact" class="btn">Let's talk <i class="uil uil-arrow-right"
+                                aria-hidden="true"></i></a>
+                        <a href="./assets/contoh.docx" download="Rajis-Alfikar-CV.docx" class="btn secondary-btn">
+                            Download CV <i class="uil uil-download-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-footer">
+                        <div class="socials">
+                            <!-- Replace the links below with your own profile URLs -->
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                                aria-label="GitHub profile"><i class="uil uil-github-alt" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="LinkedIn profile"><i class="uil uil-linkedin-alt"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Dribbble profile"><i class="uil uil-dribbble"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Instagram profile"><i class="uil uil-instagram"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <span class="hero-location"><i class="uil uil-map-marker" aria-hidden="true"></i> Indonesia ·
+                            working worldwide</span>
+                    </div>
+                </div>
+
+                <div class="showcase-image">
+                    <img src="./assets/person1.png" class="person" alt="Portrait of Rajis Alfikar">
+                    <img src="./assets/circle1.png" class="shape circle" alt="" aria-hidden="true">
+                    <img src="./assets/dots.png" class="shape dots" alt="" aria-hidden="true">
+
+                    <div class="experience-badge">
+                        <span class="icon"><i class="uil uil-award" aria-hidden="true"></i></span>
+                        <div>
+                            <strong>5+ Years</strong>
+                            <span>of design experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================= ABOUT ================= -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about-visual">
+                    <img src="./assets/circle2.png" class="shape rings" alt="" aria-hidden="true">
+                    <img src="./assets/square2.png" class="shape grid" alt="" aria-hidden="true">
+                    <img src="./assets/port3.jpg" class="about-main-img"
+                        alt="Designer's desk with wireframes, a keyboard and a cup of coffee" loading="lazy">
+                    <img src="./assets/port1.jpg" class="about-small-img"
+                        alt="Planning a mobile experience with printed screens on a wall" loading="lazy">
+                </div>
+
+                <div class="about-info">
+                    <p class="sub-heading">About me</p>
+                    <h2 class="heading">Better design,<br>better experiences</h2>
+                    <p class="text">
+                        I'm Rajis, a web designer and frontend developer based in Indonesia. For the past five years
+                        I've helped startups, agencies and independent brands turn rough ideas into digital products
+                        that look sharp and feel effortless to use.
+                    </p>
+                    <p class="text">
+                        My process is simple: understand the problem, sketch the flow, design the details, then build it
+                        for real. No bloated templates — just clean, accessible websites that load fast and work
+                        beautifully on every screen.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <strong data-count="5" data-suffix="+">5+</strong>
+                            <span>Years of experience</span>
+                        </div>
+                        <div class="stat">
+                            <strong data-count="120" data-suffix="+">120+</strong>
+                            <span>Projects delivered</span>
+                        </div>
+                        <div class="stat">
+                            <strong data-count="80" data-suffix="+">80+</strong>
+                            <span>Happy clients</span>
+                        </div>
+                    </div>
+
+                    <div class="cta">
+                        <a href="#contact" class="btn">Let's work together <i class="uil uil-arrow-right"
+                                aria-hidden="true"></i></a>
+                        <a href="#portfolio" class="btn secondary-btn">View my work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICES ================= -->
+        <section class="services section" id="services">
+            <img src="./assets/square1.png" class="shape services-square" alt="" aria-hidden="true">
+
+            <div class="container">
+                <div class="section-header">
+                    <p class="sub-heading">What I do</p>
+                    <h2 class="heading">Services built around<br>your goals</h2>
+                    <p class="text">
+                        From the first wireframe to the final deployment, I cover the whole journey of turning an idea
+                        into a product people enjoy using.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span class="service-num" aria-hidden="true">01</span>
+                        <span class="service-icon"><i class="uil uil-palette" aria-hidden="true"></i></span>
+                        <h3>Web Design</h3>
+                        <p>
+                            Clean, conversion-focused layouts designed around your brand, your content and the people
+                            who will actually use them.
+                        </p>
+                        <ul class="service-tags">
+                            <li>Landing pages</li>
+                            <li>Design systems</li>
+                            <li>Responsive</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Discuss a project <i class="uil uil-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-num" aria-hidden="true">02</span>
+                        <span class="service-icon"><i class="uil uil-brackets-curly" aria-hidden="true"></i></span>
+                        <h3>Frontend Development</h3>
+                        <p>
+                            Pixel-perfect, hand-written HTML, CSS and JavaScript that turns designs into fast,
+                            accessible websites — no heavy templates.
+                        </p>
+                        <ul class="service-tags">
+                            <li>HTML &amp; CSS</li>
+                            <li>JavaScript</li>
+                            <li>Performance</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Discuss a project <i class="uil uil-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-num" aria-hidden="true">03</span>
+                        <span class="service-icon"><i class="uil uil-mobile-android" aria-hidden="true"></i></span>
+                        <h3>UI/UX Design</h3>
+                        <p>
+                            Research, wireframes and prototypes that make complex flows feel simple — before a single
+                            line of code is written.
+                        </p>
+                        <ul class="service-tags">
+                            <li>Wireframes</li>
+                            <li>Prototypes</li>
+                            <li>Usability</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Discuss a project <i class="uil uil-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PORTFOLIO ================= -->
+        <section class="portfolio section" id="portfolio">
+            <img src="./assets/dots.png" class="shape portfolio-dots" alt="" aria-hidden="true">
+            <img src="./assets/triangle.png" class="shape portfolio-triangle" alt="" aria-hidden="true">
+
+            <div class="container">
+                <div class="section-header">
+                    <p class="sub-heading">Selected work</p>
+                    <h2 class="heading">Projects I'm proud of</h2>
+                    <p class="text">
+                        A mix of interfaces, design systems and brand-driven websites — each one built around a real
+                        problem.
+                    </p>
+                </div>
+
+                <div class="filter-bar" role="group" aria-label="Filter projects">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All
+                        projects</button>
+                    <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web design</button>
+                    <button type="button" class="filter-btn" data-filter="uiux" aria-pressed="false">UI/UX
+                        design</button>
+                    <button type="button" class="filter-btn" data-filter="brand" aria-pressed="false">Branding</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <article class="project-card" data-category="uiux">
+                        <button type="button" class="project-thumb" data-project="travel"
+                            aria-label="View details for Travel Planning, Reimagined">
+                            <img src="./assets/port1.jpg" width="1920" height="1280" loading="lazy"
+                                alt="Travel app screens connected with pins on a research wall">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">UI/UX Design</span>
+                                <h3>Travel Planning, Reimagined</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <button type="button" class="project-thumb" data-project="dashboard"
+                            aria-label="View details for Pulse Analytics Dashboard">
+                            <img src="./assets/port2.png" width="1920" height="1280" loading="lazy"
+                                alt="Analytics dashboard design shown on a desktop monitor">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">Web Design</span>
+                                <h3>Pulse Analytics Dashboard</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="brand">
+                        <button type="button" class="project-thumb" data-project="toolkit"
+                            aria-label="View details for Studio Design Toolkit">
+                            <img src="./assets/port3.jpg" width="1920" height="1281" loading="lazy"
+                                alt="Designer's desk with wireframes, keyboard and coffee">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">Branding</span>
+                                <h3>Studio Design Toolkit</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="uiux">
+                        <button type="button" class="project-thumb" data-project="bookworm"
+                            aria-label="View details for BookWorm Reading App">
+                            <img src="./assets/port4.png" width="1400" height="933" loading="lazy"
+                                alt="Hand-drawn mobile app wireframes on paper">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">UI/UX Design</span>
+                                <h3>BookWorm Reading App</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <button type="button" class="project-thumb" data-project="planner"
+                            aria-label="View details for Daylight Daily Planner">
+                            <img src="./assets/port5.png" width="1920" height="1280" loading="lazy"
+                                alt="Open daily planner beside a laptop on a wooden desk">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">Web Design</span>
+                                <h3>Daylight Daily Planner</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="brand">
+                        <button type="button" class="project-thumb" data-project="wanderlust"
+                            aria-label="View details for Wanderlust Travel Identity">
+                            <img src="./assets/port6.jpg" width="1920" height="1280" loading="lazy"
+                                alt="Travel brand workshop wall covered in sticky notes">
+                            <span class="project-overlay" aria-hidden="true">
+                                <span class="project-view">View project <i class="uil uil-arrow-up-right"></i></span>
+                            </span>
+                        </button>
+                        <div class="project-meta">
+                            <div>
+                                <span class="project-category">Branding</span>
+                                <h3>Wanderlust Travel Identity</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"><i class="uil uil-arrow-up-right"></i></span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="portfolio-foot">
+                    Have a project in mind? <a href="#contact">Let's build it together <i class="uil uil-arrow-right"
+                            aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </section>
+        <!-- ================= TESTIMONIALS ================= -->
+        <section class="testimonials section" id="testimonials">
+            <img src="./assets/square2.png" class="shape testimonials-grid" alt="" aria-hidden="true">
+            <img src="./assets/dots.png" class="shape testimonials-dots" alt="" aria-hidden="true">
+
+            <div class="container">
+                <div class="section-header">
+                    <p class="sub-heading">Testimonials</p>
+                    <h2 class="heading">Kind words from<br>people I've worked with</h2>
+                    <p class="text">
+                        Good work is a collaboration. Here's what a few clients had to say about the process.
+                    </p>
+                </div>
+
+                <div class="testimonial-slider" id="testimonial-slider" tabindex="0" role="region"
+                    aria-roledescription="carousel" aria-label="Client testimonials">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <article class="testimonial-slide" aria-roledescription="slide" aria-label="1 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/testi1.png" width="400" height="400" loading="lazy"
+                                        alt="Portrait of Sarah Mitchell">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="stars" role="img" aria-label="Rated 5 out of 5">
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        “Rajis took a messy brief and turned it into a product our users genuinely
+                                        enjoy. The new flow cut onboarding time almost in half, and the attention to
+                                        detail was incredible from day one.”
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <strong>Sarah Mitchell</strong>
+                                        <span>Product Manager · Novatech</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-slide" aria-roledescription="slide" aria-label="2 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/testi2.png" width="400" height="400" loading="lazy"
+                                        alt="Portrait of Daniel Okafor">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="stars" role="img" aria-label="Rated 5 out of 5">
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        “Working with Rajis feels effortless. He asks the right questions,
+                                        communicates clearly and delivers ahead of schedule. Our new site looks sharp
+                                        and, more importantly, actually converts.”
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <strong>Daniel Okafor</strong>
+                                        <span>Founder · Brightside Studio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-slide" aria-roledescription="slide" aria-label="3 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/testi3.png" width="400" height="400" loading="lazy"
+                                        alt="Portrait of Adam Reyes">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="stars" role="img" aria-label="Rated 5 out of 5">
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                        <i class="uis uis-star" aria-hidden="true"></i>
+                                    </div>
+                                    <blockquote>
+                                        “Clean code, thoughtful design and zero drama. Rajis is the rare designer who
+                                        understands how things are built — our frontend has never been easier to
+                                        maintain.”
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <strong>Adam Reyes</strong>
+                                        <span>CTO · Loop Labs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button type="button" class="slider-btn" id="testimonial-prev"
+                        aria-label="Previous testimonial">
+                        <i class="uil uil-angle-left-b" aria-hidden="true"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button type="button" class="slider-btn" id="testimonial-next" aria-label="Next testimonial">
+                        <i class="uil uil-angle-right-b" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact section" id="contact">
+            <img src="./assets/triangle.png" class="shape contact-triangle" alt="" aria-hidden="true">
+
+            <div class="container">
+                <div class="contact-info">
+                    <p class="sub-heading">Contact</p>
+                    <h2 class="heading">Let's build something<br>people love to use.</h2>
+                    <p class="text">
+                        Have a project in mind, a rough idea, or just a question? Tell me a little about it — I reply
+                        within one business day.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="icon"><i class="uil uil-envelope" aria-hidden="true"></i></span>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:rajisalfikar@gmail.com">rajisalfikar@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon"><i class="uil uil-map-marker" aria-hidden="true"></i></span>
+                            <div>
+                                <span>Location</span>
+                                <strong>Indonesia — working worldwide</strong>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon"><i class="uil uil-clock" aria-hidden="true"></i></span>
+                            <div>
+                                <span>Response time</span>
+                                <strong>Within 24 hours</strong>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="contact-socials">
+                        <span>Find me on</span>
+                        <div class="socials">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                                aria-label="GitHub profile"><i class="uil uil-github-alt" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="LinkedIn profile"><i class="uil uil-linkedin-alt"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Dribbble profile"><i class="uil uil-dribbble"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Instagram profile"><i class="uil uil-instagram"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="map-card">
+                        <img src="./assets/map.png" alt="" aria-hidden="true" loading="lazy">
+                        <div class="map-caption">
+                            <span class="pin"><i class="uil uil-map-marker" aria-hidden="true"></i></span>
+                            <div>
+                                <strong>Available worldwide</strong>
+                                <span>Remote-friendly, any timezone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <h3>Send a message</h3>
+                    <p>Fill in the form below and I'll get back to you as soon as I can.</p>
+
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name"
+                                required aria-describedby="name-error">
+                            <span class="field-error" id="name-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="jane@company.com"
+                                autocomplete="email" required aria-describedby="email-error">
+                            <span class="field-error" id="email-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="subject">Subject <span class="optional">(optional)</span></label>
+                            <input type="text" id="subject" name="subject" placeholder="Website redesign for my startup">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell me a little about your project, timeline and budget…" required
+                                aria-describedby="message-error"></textarea>
+                            <span class="field-error" id="message-error" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Send message <i class="uil uil-message" aria-hidden="true"></i>
+                    </button>
+
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    <p class="form-note">Prefer email? Write to <a
+                            href="mailto:rajisalfikar@gmail.com">rajisalfikar@gmail.com</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Portf<span>olio.</span></a>
+                    <p>
+                        Web designer &amp; frontend developer crafting clean, thoughtful digital experiences for
+                        brands and startups.
+                    </p>
+                    <div class="socials">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                            aria-label="GitHub profile"><i class="uil uil-github-alt" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LinkedIn profile"><i class="uil uil-linkedin-alt"
+                                aria-hidden="true"></i></a>
+                        <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                            aria-label="Dribbble profile"><i class="uil uil-dribbble" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Instagram profile"><i class="uil uil-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web design</a></li>
+                        <li><a href="#services">Frontend development</a></li>
+                        <li><a href="#services">UI/UX design</a></li>
+                        <li><a href="#portfolio">Selected work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li><i class="uil uil-envelope" aria-hidden="true"></i><a
+                                href="mailto:rajisalfikar@gmail.com">rajisalfikar@gmail.com</a></li>
+                        <li><i class="uil uil-map-marker" aria-hidden="true"></i><span>Indonesia — worldwide</span></li>
+                        <li><i class="uil uil-clock" aria-hidden="true"></i><span>Replies within 24 hours</span></li>
+                    </ul>
+                    <a href="#contact" class="footer-cta">Start a project <i class="uil uil-arrow-right"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Rajis Alfikar. All rights reserved.</p>
+                <p>Designed &amp; built with <i class="uil uil-heart heart" aria-hidden="true"></i> and a lot of
+                    coffee.</p>
+            </div>
+        </div>
+        <span class="footer-wordmark" aria-hidden="true">Rajis</span>
+    </footer>
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="uil uil-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- ================= PROJECT LIGHTBOX ================= -->
+    <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close project details">
+            <i class="uil uil-times" aria-hidden="true"></i>
+        </button>
+        <img class="modal-image" id="modal-image" alt="">
+        <div class="modal-body">
+            <span class="modal-category" id="modal-category"></span>
+            <h3 id="modal-title"></h3>
+            <p class="modal-desc" id="modal-desc"></p>
+
+            <div class="modal-meta">
+                <div><span>Year</span><strong id="modal-year"></strong></div>
+                <div><span>Role</span><strong id="modal-role"></strong></div>
+                <div><span>Deliverables</span><strong id="modal-deliverables"></strong></div>
+            </div>
+
+            <ul class="modal-tags" id="modal-tags"></ul>
+
+            <a href="#contact" class="btn" id="modal-cta">
+                Start a similar project <i class="uil uil-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </dialog>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
